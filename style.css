@@ -1,0 +1,173 @@
+/* Font family -> Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(plane.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #00f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 2555, 255, 0.6);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 2.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label ,
+input:valid ~ label {
+    top: -5px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color:#fff;
+}
+
+.input-container i{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.forgot-password{
+    margin: -15px 0 15px;
+    font-size: .8rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forgot-password label input {
+    margin: 3px;
+}
+
+.forgot-password label a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    font-size: 0.9em;
+}
+
+.forgot-password label a:hover{
+    color: #f00;
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.signup{
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.signup p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.signup p a:hover {
+    color: #ff0;
+    text-decoration: underline;
+}
